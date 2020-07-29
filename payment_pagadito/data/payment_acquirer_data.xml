@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="payment_acquirer_pagadito" model="payment.acquirer">
+            <field name="name">Pagadito</field>
+            <field name="image_128" type="base64" file="payment_pagadito/static/src/img/pagadito_icon.jpg"/>
+            <field name="provider">pagadito</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="view_template_id" ref="pagadito_form"/>
+            <!--field name="environment">test</field-->
+            <field name="pre_msg"><![CDATA[
+<p>You will be redirected to the Pagadito website after clicking on the payment button.</p>]]></field>
+            <!--field name="pagadito_email_account">dummy</field>
+            <field name="pagadito_seller_account">dummy</field>
+            <field name="pagadito_api_username">dummy</field>
+            <field name="pagadito_api_password">dummy</field>
+            <field name="pagadito_pdt_token">dummy</field-->
+        </record>
+
+    </data>
+</odoo>
